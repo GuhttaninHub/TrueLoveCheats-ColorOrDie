@@ -17,9 +17,9 @@ if Fluent then
     local Auto_Win_Tab_Button = Auto_Win_Tab:AddButton({
             Title = "Auto Win",
             Callback = function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/GuhttaninHub/Teste-Auto-Farm-Color-or-Die/refs/heads/main/teste_color_or_die.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/GuhttaninHub/Auto-Zerar-Color_Or_Die/refs/heads/main/Auto_Zerar.lua"))()
             end
-      })
+    })
     
     Window:Show()
 else
