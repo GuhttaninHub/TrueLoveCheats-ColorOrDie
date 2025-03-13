@@ -9,6 +9,7 @@ local player = game.Players.LocalPlayer
 
 local Chapter1 = 12931609417
 local Chapter2 = 13429735204
+local Chapter3 = 13622138404
 
 local Tab_AutoWin = Window:MakeTab({
 	Name = "Auto Win",
@@ -32,7 +33,7 @@ local Tab_Teleport = Window:MakeTab({
 Tab_Teleport:AddDropdown({
 	Name = "Select Chapter",
 	Default = "Chapter 1",
-	Options = {"Chapter 1", "Chapter 2"},
+	Options = {"Chapter 1", "Chapter 2", "Chapter 3"},
 	Callback = function(Value)
 		if Value == "Chapter 1" then
 		    Chapters = "C - 1"
@@ -40,6 +41,10 @@ Tab_Teleport:AddDropdown({
 		
 		if Value == "Chapter 2" then
 		    Chapters = "C - 2"
+		end
+
+		if Value == "Chapter 3" then
+		    Chapters = "C - 3"
 		end
 	end
 })
@@ -52,6 +57,9 @@ Tab_Teleport:AddButton({
 	end
         if Chapters == "C - 2" then
             TeleportService:Teleport(Chapter2, player)
+	end
+	if Chapters == "C - 3" then
+	    Teleport:Service:Teleport(Chapter3, player)
 	end
     end
 })
