@@ -40,15 +40,15 @@ Tab_Teleport:AddDropdown({
 		    Chapters = "C - 1"
 		end
 		
-		if Value == "Chapter 2" then
+		elseif Value == "Chapter 2" then
 		    Chapters = "C - 2"
 		end
 
-		if Value == "Chapter 3" then
+	        elseif Value == "Chapter 3" then
 		    Chapters = "C - 3"
 		end
 
-		if Value == "Chapter 4" then
+                elseif Value == "Chapter 4" then
 		    Chapters = "C - 4"
 		end
 	end
@@ -60,13 +60,13 @@ Tab_Teleport:AddButton({
         if Chapters == "C - 1" then
             TeleportService:Teleport(Chapter1, player)
 	end
-        if Chapters == "C - 2" then
+        elseif Chapters == "C - 2" then
             TeleportService:Teleport(Chapter2, player)
 	end
-	if Chapters == "C - 3" then
+        elseif Chapters == "C - 3" then
 	    TeleportService:Teleport(Chapter3, player)
 	end
-	if Chapters == "C - 4" then
+        elseif Chapters == "C - 4" then
 	    TeleportService:Teleport(Chapter4, player)
     end
 })
