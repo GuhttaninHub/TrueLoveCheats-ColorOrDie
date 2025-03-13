@@ -17,7 +17,7 @@ local Tab_AutoWin = Window:MakeTab({
 })
 
 Tab_AutoWin:AddButton({
-	Name = "Auto Win",
+	Name = "Auto Win Chapter 1",
 	Callback = function()
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/GuhttaninHub/Auto-Zerar-Color_Or_Die/refs/heads/main/Auto_Zerar.lua"))()
   	end    
