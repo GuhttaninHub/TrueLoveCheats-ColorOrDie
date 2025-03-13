@@ -1,32 +1,57 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source'))()
+    
+local Window = OrionLib:MakeWindow({Name = "XYZ Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "XYZ Hub"})
 
-local Window = Library.CreateLib("XYZ Hub", "DarkTheme")
+local Chapters
 
-local Tab_AutoWin = Window:NewTab("Auto Win")
+local TeleportService = game:GetService("TeleportService")
+local player = game.Players.LocalPlayer
 
-local Tab_Teleport = Window:NewTab("Teleport")
+local Chapter1 = 12931609417
+local Chapter2 = 13429735204
 
-Tab_AutoWin:NewButton("Auto Win", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GuhttaninHub/Auto-Zerar-Color_Or_Die/refs/heads/main/Auto_Zerar.lua"))()
-end)
+local Tab_AutoWin = Window:MakeTab({
+	Name = "Auto Win",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-Tab_Teleport:NewDropdown("Teleport Chapters", {"Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"}, function(currentOption)
-    if currentOption == "Chapter 1" then
-        local TeleportService = game:GetService("TeleportService")
-        local Players = game:GetService("Players")
+Tab_AutoWin:AddButton({
+	Name = "Auto Win",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/GuhttaninHub/Auto-Zerar-Color_Or_Die/refs/heads/main/Auto_Zerar.lua"))()
+  	end    
+})
 
-        local GameID = 12931609417
+local Tab_Teleport = Window:MakeTab({
+	Name = "Chapters",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-        local player = Players.LocalPlayer
-        TeleportService:Teleport(GameID, player)
+Tab_Teleport:AddDropdown({
+	Name = "Select Chapter",
+	Default = "Chapter 1",
+	Options = {"Chapter 1", "Chapter 2"},
+	Callback = function(Value)
+		if Value == "Chapter 1" then
+		    Chapters = "C - 1"
+		end
+		
+		if Value == "Chapter 2" then
+		    Chapters = "C - 2"
+		end
+	end
+})
+
+Tab_Teleport:AddButton({
+    Name = "Teleport Chapter Selected",
+    Callback = function()
+        if Chapters == "C - 1" then
+            TeleportService:Teleport(Chapter1, player)
+        if Chapters == "C - 2" then
+            TeleportService:Teleport(Chapter2, player)
     end
-    if currentOption == "Chapter 2" then
-        local TeleportService = game:GetService("TeleportService")
-        local Players = game:GetService("Players")
+})
 
-        local GameID = 13429735204
-
-        local player = Players.LocalPlayer
-        TeleportService:Teleport(GameID, player)
-    end
-end)
+OrionLib:Init()
