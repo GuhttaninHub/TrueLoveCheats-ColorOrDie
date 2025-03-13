@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source'))()
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/jensonhirst/Orion/main/source'))()
     
 local Window = OrionLib:MakeWindow({Name = "XYZ Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "XYZ Hub"})
 
@@ -49,8 +49,10 @@ Tab_Teleport:AddButton({
     Callback = function()
         if Chapters == "C - 1" then
             TeleportService:Teleport(Chapter1, player)
+	end
         if Chapters == "C - 2" then
             TeleportService:Teleport(Chapter2, player)
+	end
     end
 })
 
