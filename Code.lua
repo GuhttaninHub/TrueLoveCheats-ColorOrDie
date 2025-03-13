@@ -20,6 +20,10 @@ if Fluent then
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/GuhttaninHub/Auto-Zerar-Color_Or_Die/refs/heads/main/Auto_Zerar.lua"))()
             end
     })
+
+    local Teleport_Tab = Window:AddTab({ Title = "Teleport", Icon = "settings" })
+
+    local Teleport_Tab_Dropdown = Teleport_Tab:Dropdown
     
     Window:Show()
 else
