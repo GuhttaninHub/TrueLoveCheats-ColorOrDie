@@ -66,7 +66,7 @@ Tab_Teleport:AddButton({
 	if Chapters == "C - 3" then
 	    TeleportService:Teleport(Chapter3, player)
 	end
-	if Chapters = "C - 4" then
+	if Chapters == "C - 4" then
 	    TeleportService:Teleport(Chapter4, player)
     end
 })
