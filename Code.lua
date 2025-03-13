@@ -10,6 +10,7 @@ local player = game.Players.LocalPlayer
 local Chapter1 = 12931609417
 local Chapter2 = 13429735204
 local Chapter3 = 13622138404
+local Chapter4 = 92691286130182
 
 local Tab_AutoWin = Window:MakeTab({
 	Name = "Auto Win",
@@ -33,7 +34,7 @@ local Tab_Teleport = Window:MakeTab({
 Tab_Teleport:AddDropdown({
 	Name = "Select Chapter",
 	Default = "Chapter 1",
-	Options = {"Chapter 1", "Chapter 2", "Chapter 3"},
+	Options = {"Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"},
 	Callback = function(Value)
 		if Value == "Chapter 1" then
 		    Chapters = "C - 1"
@@ -45,6 +46,10 @@ Tab_Teleport:AddDropdown({
 
 		if Value == "Chapter 3" then
 		    Chapters = "C - 3"
+		end
+
+		if Value == "Chapter 4" then
+		    Chapters = "C - 4"
 		end
 	end
 })
@@ -61,7 +66,10 @@ Tab_Teleport:AddButton({
 	if Chapters == "C - 3" then
 	    TeleportService:Teleport(Chapter3, player)
 	end
+	if Chapters = "C - 4" then
+	    TeleportService:Teleport(Chapter4, player)
     end
 })
 
 OrionLib:Init()
+	
