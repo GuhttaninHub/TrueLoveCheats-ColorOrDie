@@ -19,6 +19,7 @@ Tab_Teleport:NewDropdown("Teleport Chapters", {"Chapter 1", "Chapter 2", "Chapte
 
         local player = Players.LocalPlayer
         TeleportService:Teleport(GameID, player)
+    end
     if currentOption == "Chapter 2" then
         local TeleportService = game:GetService("TeleportService")
         local Players = game:GetService("Players")
@@ -27,4 +28,5 @@ Tab_Teleport:NewDropdown("Teleport Chapters", {"Chapter 1", "Chapter 2", "Chapte
 
         local player = Players.LocalPlayer
         TeleportService:Teleport(GameID, player)
+    end
 end)
