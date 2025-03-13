@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/jensonhirst/Orion/main/source'))()
     
-local Window = OrionLib:MakeWindow({Name = "XYZ Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "XYZ Hub"})
+local Window = OrionLib:MakeWindow({Name = "SkyZ Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "SkyZ Hub"})
 
 local Chapters
 
