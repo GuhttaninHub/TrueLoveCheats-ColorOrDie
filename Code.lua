@@ -12,7 +12,7 @@ Window:AddMinimizeButton({
         BackgroundTransparency = 0
     },
     Corner = {
-        CornerRadius = UDim.new(0, 18)
+        CornerRadius = UDim.new(0, 5)
     }
 })
 
