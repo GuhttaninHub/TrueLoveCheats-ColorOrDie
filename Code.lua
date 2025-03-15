@@ -52,38 +52,38 @@ end})
 
 local Secrets_Rooms_Tab = Window:MakeTab({"Secrets Rooms", "Secrets Rooms"})
 
-HammerRoom = 215.925003, 15.3999958, 168.499985, 0, 0, 1, 0, 1, -0, -1, 0, 0
+HammerRoom = CFrame.new(215.925003, 15.3999958, 168.499985, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-KeyRoom = 258.270081, 12.3500004, -182.982941, 0, 0, -1, 0, 1, 0, 1, 0, 0
+KeyRoom = CFrame.new(258.270081, 12.3500004, -182.982941, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 
-PlankRoom = 44.9749908, 40.9499969, -15.4500046, 0, 0, 1, 0, 1, -0, -1, 0, 0
+PlankRoom = CFrame.new(44.9749908, 40.9499969, -15.4500046, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-PuzzleRoom = 133.711212, 11.3930454, -133.120468, 0, 0, 1, 0, 1, -0, -1, 0, 0
+PuzzleRoom = CFrame.new(133.711212, 11.3930454, -133.120468, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-SawRoom = 151.25, 36.6930466, -6.10000038, 1, 0, 0, 0, 1, 0, 0, 0, 1
+SawRoom = CFrame.new(151.25, 36.6930466, -6.10000038, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 
-ScrewDriverRoom = 390.170105, 11.1000004, 29.8170528, 1, 0, 0, 0, 1, 0, 0, 0, 1
+ScrewDriverRoom = CFrame.new(390.170105, 11.1000004, 29.8170528, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 
-Secrets_Rooms_Tab:AddButton({"Teletransport Hammer Secret Room", function() 
-    character:SetPrimaryPartCFrame(HammerRoom)
+Secrets_Rooms_Tab:AddButton({"Teletransport Hammer Secret Room", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = HammerRoom
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Key Secret Room", function() 
-    character:SetPrimaryPartCFrame(KeyRoom)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = KeyRoom
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Plank Secret Room", function() 
-    character:SetPrimaryPartCFrame(PlankRoom)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = PlankRoom
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Puzzle Secret Room", function() 
-    character:SetPrimaryPartCFrame(PuzzleRoom)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = PuzzleRoom
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Saw Secret Room", function() 
-    character:SetPrimaryPartCFrame(SawRoom)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = SawRoom
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport ScrewDriver Secret Room", function() 
-    character:SetPrimaryPartCFrame(ScrewDriverRoom)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ScrewDriver
 end})
