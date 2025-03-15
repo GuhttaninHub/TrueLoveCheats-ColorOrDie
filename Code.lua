@@ -87,3 +87,16 @@ end})
 Secrets_Rooms_Tab:AddButton({"Teletransport ScrewDriver Secret Room", function() 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ScrewDriverRoom
 end})
+
+local FOG_tab = Window:MakeTab({"FOG", "FOG"})
+
+FOG_tab:AddSlider({
+        Title = "Adjust FOG",
+        Min = 0,
+        Max = 1,
+        Increase = 0.1,
+        Default = game:GetService("Lighting").Atmosphere.Density,
+        Callback = function(Value)
+            game:GetService("Lighting").Atmosphere.Density = Value
+        end
+})
