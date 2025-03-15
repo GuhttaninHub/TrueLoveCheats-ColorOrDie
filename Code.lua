@@ -65,25 +65,25 @@ SawRoom = 151.25, 36.6930466, -6.10000038, 1, 0, 0, 0, 1, 0, 0, 0, 1
 ScrewDriverRoom = 390.170105, 11.1000004, 29.8170528, 1, 0, 0, 0, 1, 0, 0, 0, 1
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Hammer Secret Room", function() 
-    character:SetPrimaryPartCFrame(CFrame.new(HammerRoom))
+    character:SetPrimaryPartCFrame(HammerRoom)
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Key Secret Room", function() 
-    character:SetPrimaryPartCFrame(CFrame.new(KeyRoom))
+    character:SetPrimaryPartCFrame(KeyRoom)
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Plank Secret Room", function() 
-    character:SetPrimaryPartCFrame(CFrame.new(PlankRoom))
+    character:SetPrimaryPartCFrame(PlankRoom)
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Puzzle Secret Room", function() 
-    character:SetPrimaryPartCFrame(CFrame.new(PuzzleRoom))
+    character:SetPrimaryPartCFrame(PuzzleRoom)
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Saw Secret Room", function() 
-    character:SetPrimaryPartCFrame(CFrame.new(SawRoom))
+    character:SetPrimaryPartCFrame(SawRoom)
 end})
 
 Secrets_Rooms_Tab:AddButton({"Teletransport ScrewDriver Secret Room", function() 
-    character:SetPrimaryPartCFrame(CFrame.new(ScrewDriverRoom))
+    character:SetPrimaryPartCFrame(ScrewDriverRoom)
 end})
