@@ -94,7 +94,7 @@ FOG_tab:AddSlider({
         Title = "Adjust FOG",
         Min = 0,
         Max = 1,
-        Increase = 0.1,
+        Increase = 0.02,
         Default = game:GetService("Lighting").Atmosphere.Density,
         Callback = function(Value)
             game:GetService("Lighting").Atmosphere.Density = Value
