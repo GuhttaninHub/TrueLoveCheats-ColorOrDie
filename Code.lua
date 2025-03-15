@@ -18,6 +18,7 @@ Window:AddMinimizeButton({
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character.Humanoid
 
 local Auto_Win_Tab = Window:MakeTab({ "Auto Win", "Auto Win" })
 
@@ -98,5 +99,18 @@ FOG_tab:AddSlider({
         Default = 0.8,
         Callback = function(Value)
             game:GetService("Lighting").Atmosphere.Density = Value
+        end
+})
+
+local player_tab = Window:MakeTab({"Player", "player"})
+
+player_tab:AddSlider({
+        Title = "Velocity",
+        Min = 0,
+        Max = 200,
+        Increase = 1,
+        Default = 16,
+        Callback = function(Value)
+            humanoid.WalkSpeed = Value
         end
 })
