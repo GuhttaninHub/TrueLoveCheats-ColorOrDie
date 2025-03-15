@@ -2,7 +2,7 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/realr
 
 local Window = redzlib:MakeWindow({
     Title = "Ghost-X Hub",
-    SubTitle = "Desenvolvido por Guhttanin",
+    SubTitle = "Made by Guhttanin",
     SaveFolder = "Redz Config"
 })
 
