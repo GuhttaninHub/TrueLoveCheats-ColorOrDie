@@ -91,6 +91,44 @@ Secrets_Rooms_Tab:AddButton({"Teletransport ScrewDriver Secret Room - Chapter 1"
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ScrewDriverRoom
 end})
 
+local Chapter2_Section_SR = Secrets_Rooms_Tab:AddSection({"Chapter 2"})
+
+CrowBarRoom = CFrame.new(28.8224201, -14.7999992, -480.78714, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+DynamiteRoom = CFrame.new(88.3224182, 6.50000191, -735.312073, -0.0446587801, 0, 0.999002337, 0, 1, 0, -0.999002337, 0, -0.0446587801)
+
+KeyRoom = CFrame.new(267.777679, 11.1000004, -407.540955, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+PickAxeRoom = CFrame.new(362.222412, -14.3499985, -389.637146, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+ScrewDriverRoom = CFrame.new(76.0062103, 11.1000004, -424.648529, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+TorchRoom = CFrame.new(267.07019, 11.1000004, -770.083008, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+Secrets_Rooms_Tab:AddButton({"Teletransport CrowBar Secret Room - Chapter 2", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CrowBarRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport Dynamite Secret Room - Chapter 2", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = DynamiteRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport Key Secret Room - Chapter 2", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = KeyRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport PickAxe Secret Room - Chapter 2", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = PickAxeRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport ScrewDriver Secret Room - Chapter 2", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ScrewDriverRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport Torch Secret Room - Chapter 2", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = TorchRoom
+end})
+
 local FOG_tab = Window:MakeTab({"FOG", "FOG"})
 
 FOG_tab:AddSlider({
