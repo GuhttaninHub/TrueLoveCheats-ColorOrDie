@@ -129,6 +129,38 @@ Secrets_Rooms_Tab:AddButton({"Teletransport Torch Secret Room - Chapter 2", func
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = TorchRoom
 end})
 
+local Chapter3_Section_SR = Secrets_Rooms_Tab:AddSection({"Chapter 3"})
+
+local BotanistRoom = CFrame.new(176.632095, 7.2231636, -59.980835, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+local CabinRoom = CFrame.new(-160.754227, 7.22317982, -84.1521683, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+local OfficeRoom = CFrame.new(-184.351929, 7.2231636, -239.843414, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+local PetShopRoom = CFrame.new(186.813919, 31.6856308, -288.43042, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+local ServerRoom = CFrame.new(-79.0491104, 7.2231636, -385.409119, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+Secrets_Rooms_Tab:AddButton({"Teletransport Botanist Secret Room - Chapter 3", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = BotanistRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport Cabin Secret Room - Chapter 3", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CabinRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport Office Secret Room - Chapter 3", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OfficeRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport PetShop Secret Room - Chapter 3", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = PetShopRoom
+end})
+
+Secrets_Rooms_Tab:AddButton({"Teletransport Servers Secret Room - Chapter 3", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ServerRoom
+end})
+
 local FOG_tab = Window:MakeTab({"FOG", "FOG"})
 
 FOG_tab:AddSlider({
