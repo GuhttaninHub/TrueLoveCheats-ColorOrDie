@@ -55,17 +55,17 @@ local Secrets_Rooms_Tab = Window:MakeTab({"Secrets Rooms", "Secrets Rooms"})
 
 local Chapter1_Section_SR = Secrets_Rooms_Tab:AddSection({"Chapter 1"})
 
-HammerRoom = CFrame.new(215.925003, 15.3999958, 168.499985, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local HammerRoom = CFrame.new(215.925003, 15.3999958, 168.499985, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-KeyRoom = CFrame.new(258.270081, 12.3500004, -182.982941, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+local KeyRoom = CFrame.new(258.270081, 12.3500004, -182.982941, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 
-PlankRoom = CFrame.new(44.9749908, 40.9499969, -15.4500046, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local PlankRoom = CFrame.new(44.9749908, 40.9499969, -15.4500046, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-PuzzleRoom = CFrame.new(133.711212, 11.3930454, -133.120468, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local PuzzleRoom = CFrame.new(133.711212, 11.3930454, -133.120468, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-SawRoom = CFrame.new(151.25, 36.6930466, -6.10000038, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local SawRoom = CFrame.new(151.25, 36.6930466, -6.10000038, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 
-ScrewDriverRoom = CFrame.new(390.170105, 11.1000004, 29.8170528, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local ScrewDriverRoom = CFrame.new(390.170105, 11.1000004, 29.8170528, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 
 Secrets_Rooms_Tab:AddButton({"Teletransport Hammer Secret Room - Chapter 1", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = HammerRoom
@@ -93,17 +93,17 @@ end})
 
 local Chapter2_Section_SR = Secrets_Rooms_Tab:AddSection({"Chapter 2"})
 
-CrowBarRoom = CFrame.new(28.8224201, -14.7999992, -480.78714, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local CrowBarRoom = CFrame.new(28.8224201, -14.7999992, -480.78714, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-DynamiteRoom = CFrame.new(88.3224182, 6.50000191, -735.312073, -0.0446587801, 0, 0.999002337, 0, 1, 0, -0.999002337, 0, -0.0446587801)
+local DynamiteRoom = CFrame.new(88.3224182, 6.50000191, -735.312073, -0.0446587801, 0, 0.999002337, 0, 1, 0, -0.999002337, 0, -0.0446587801)
 
-KeyRoom_2 = CFrame.new(267.777679, 11.1000004, -407.540955, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+local KeyRoom_2 = CFrame.new(267.777679, 11.1000004, -407.540955, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 
-PickAxeRoom = CFrame.new(362.222412, -14.3499985, -389.637146, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local PickAxeRoom = CFrame.new(362.222412, -14.3499985, -389.637146, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
-ScrewDriverRoom_2 = CFrame.new(76.0062103, 11.1000004, -424.648529, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+local ScrewDriverRoom_2 = CFrame.new(76.0062103, 11.1000004, -424.648529, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 
-TorchRoom = CFrame.new(267.07019, 11.1000004, -770.083008, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local TorchRoom = CFrame.new(267.07019, 11.1000004, -770.083008, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 
 Secrets_Rooms_Tab:AddButton({"Teletransport CrowBar Secret Room - Chapter 2", function() 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CrowBarRoom
