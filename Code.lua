@@ -53,7 +53,6 @@ end})
 
 local Secrets_Rooms_Tab = Window:MakeTab({"Secrets Rooms", "Secrets Rooms"})
 
-Window:SelectTab(Secrets_Rooms_Tab)
 local Chapter1_Section_SR = Secrets_Rooms_Tab:AddSection({"Chapter 1"})
 
 HammerRoom = CFrame.new(215.925003, 15.3999958, 168.499985, 0, 0, 1, 0, 1, -0, -1, 0, 0)
@@ -68,27 +67,27 @@ SawRoom = CFrame.new(151.25, 36.6930466, -6.10000038, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 
 ScrewDriverRoom = CFrame.new(390.170105, 11.1000004, 29.8170528, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 
-Chapter1_Section_SR:AddButton({"Teletransport Hammer Secret Room - Chapter 1", function()
+Secrets_Rooms_Tab:AddButton({"Teletransport Hammer Secret Room - Chapter 1", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = HammerRoom
 end})
 
-Chapter1_Section_SR:AddButton({"Teletransport Key Secret Room - Chapter 1", function() 
+Secrets_Rooms_Tab:AddButton({"Teletransport Key Secret Room - Chapter 1", function() 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = KeyRoom
 end})
 
-Chapter1_Section_SR:AddButton({"Teletransport Plank Secret Room - Chapter 1", function() 
+Secrets_Rooms_Tab:AddButton({"Teletransport Plank Secret Room - Chapter 1", function() 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = PlankRoom
 end})
 
-Chapter1_Section_SR:AddButton({"Teletransport Puzzle Secret Room - Chapter 1", function() 
+Secrets_Rooms_Tab:AddButton({"Teletransport Puzzle Secret Room - Chapter 1", function() 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = PuzzleRoom
 end})
 
-Chapter1_Section_SR:AddButton({"Teletransport Saw Secret Room - Chapter 1", function() 
+Secrets_Rooms_Tab:AddButton({"Teletransport Saw Secret Room - Chapter 1", function() 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = SawRoom
 end})
 
-Chapter1_Section_SR:AddButton({"Teletransport ScrewDriver Secret Room - Chapter 1", function() 
+Secrets_Rooms_Tab:AddButton({"Teletransport ScrewDriver Secret Room - Chapter 1", function() 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ScrewDriverRoom
 end})
 
