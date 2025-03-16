@@ -53,6 +53,7 @@ end})
 
 local Secrets_Rooms_Tab = Window:MakeTab({"Secrets Rooms", "Secrets Rooms"})
 
+Window:SelectTab(Secrets_Rooms_Tab)
 local Chapter1_Section_SR = Secrets_Rooms_Tab:AddSection({"Chapter 1"})
 
 HammerRoom = CFrame.new(215.925003, 15.3999958, 168.499985, 0, 0, 1, 0, 1, -0, -1, 0, 0)
